@@ -84,6 +84,11 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num < 90) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function mayorQueCincuenta(num) {
@@ -135,12 +140,13 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  return Math.pow(num, 3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.pow(num, 3);
+  return num ** exponent;
 }
 
 function redondearNumero(num) {
@@ -166,12 +172,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (num > 0) {
-    return "es positivo";
-  } else if (numero < 0) {
-    return "es negativo";
+  if (numero > 0) {
+    return "Es positivo";
   }
-  return false;
+  if (numero < 0) {
+    return "Es negativo";
+  } else {
+    return false;
+  }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -192,7 +200,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ` Hola ${nombre} ! `;
+  return "Hola " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
