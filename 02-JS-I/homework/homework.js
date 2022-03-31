@@ -27,13 +27,16 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return "Matias";
+  var palabra = "Henry";
+  return palabra;
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
+  var sumar = x + y;
+  return sumar;
 }
 
 function resta(x, y) {
@@ -45,17 +48,25 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
+  var multiplica = x * y;
+  return multiplica;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
+  return x / y;
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (x === y) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
