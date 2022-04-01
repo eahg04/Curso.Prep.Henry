@@ -2,12 +2,11 @@
 
 ### Pre-requisitos
 
-* Crear una cuenta en [Github.com](https://www.github.com/).
-* Si usas una computadora con Windows, puedes instalar la terminal de comandos _git-bash_ haciendo click [acá](https://git-for-windows.github.io/).
-* Si usas Mac, `git` viene pre-instalado y puedes acceder desde la terminal pulsando ⌘+Espacio y escribiendo "terminal". Puedes asegurarte de que git está instalado escribiendo `which git` en la terminal y pulsando Enter, si aparece la ruta de un archivo está todo correcto. En algunas ocasiones, podrías ser redireccionado a la descarga de la línea de comandos de Xcode, sigue las instrucciones.
-* Si usas Linux, tal vez necesites instalar git accediendo a tu terminal e ingresado `apt-get install git`
-* Si tienes problemas instalando Git, este recurso puede servir de ayuda: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
+- Crear una cuenta en [Github.com](https://www.github.com/).
+- Si usas una computadora con Windows, puedes instalar la terminal de comandos _git-bash_ haciendo click [acá](https://git-for-windows.github.io/).
+- Si usas Mac, `git` viene pre-instalado y puedes acceder desde la terminal pulsando ⌘+Espacio y escribiendo "terminal". Puedes asegurarte de que git está instalado escribiendo `which git` en la terminal y pulsando Enter, si aparece la ruta de un archivo está todo correcto. En algunas ocasiones, podrías ser redireccionado a la descarga de la línea de comandos de Xcode, sigue las instrucciones.
+- Si usas Linux, tal vez necesites instalar git accediendo a tu terminal e ingresado `apt-get install git`
+- Si tienes problemas instalando Git, este recurso puede servir de ayuda: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ### Comandos básicos de terminal
 
@@ -16,22 +15,25 @@
 Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, añadir, eliminar y modificar archivos, y muchas cosas más. La terminal es una herramienta muy poderosa para los desarrolladores y vas a usarla mucho en tu carrera profesional. Al principio puede parecer aterrador, pero con el tiempo terminarás disfrutando su uso, así que es mejor acostumbrarse ahora. Para comenzar, aprenderemos los comandos "básicos":
 
 "List": Nos permite ver el contenido de la carpeta donde nos encontramos.
+
 ```bash
   $ ls
 ```
 
-
 "Change Directory": Nos permite movernos a una nueva carpeta o "directorio"
+
 ```bash
   $ cd [carpeta]
 ```
 
 "Make Directory": Crea una nueva carpeta en el directorio donde nos encontramos actualmente.
+
 ```bash
   $ mkdir [nombre de la carpeta]
 ```
 
 "Touch" creará un nuevo archivo.
+
 ```bash
   $ touch [nombre del archivo]
 ```
@@ -72,7 +74,7 @@ En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Cr
 
 ![alt](../img/create-repository-name.png)
 
-Luego elegí la visibilidad del proyecto como público (para tener repos privados tenes que pagar el premium de github).
+Luego elegí la visibilidad del proyecto como público (para tener repos privados tenes que pagar el premium de github).cd
 
 Por último haz clic en **Crear repositorio**.
 
@@ -83,7 +85,6 @@ Listo ya tenes tu propio repo. Ahora vas a poder clonarlo con las intrucciones d
 Para poder trabajar en un proyecto debes clonarlo (descargarlo) a tu máquina local. Para ello, accede al repositorio que creaste en tu cuenta, y haz click en el botón de la esquina superior derecha que dice "Clonar o descargar". Un dropdown aparecerá y podemos clickear en el icono del clipboard para copiar la dirección del repo. O, si el repo esta vacio vas a ver en el medio de la pantalla la URL con la dirección de tu repositorio.
 
 Una vez tengas la dirección copiada, abre una terminal nueva y escribe lo siguiente:
-
 
 ```bash
   $ cd ~
@@ -105,7 +106,7 @@ A continuación, escribe lo siguiente en tu terminal:
 
 ```bash
   $ cd repositorio-henry
-  
+
   $ touch archivo-ejemplo.js
 ```
 
@@ -138,7 +139,6 @@ Esto nos dice que tenemos un archivo que ha cambiado, pero todavía no ha sido g
 
 Para hacer esto, usaremos el comando "add":
 
-
 ```bash
   git add archivo-ejemplo.js
 ```
@@ -156,6 +156,7 @@ Ahora que guardamos nuestros cambios localmente, vamos a querer compartir esos c
 ```
 
 La terminal te preguntará tu usuario y contraseña (En el caso de la contraseña cuando la estemos escribiendo por consola, por cuestiones de seguridad no se verá lo que estamos escribiendo). Escribimos estos datos y a continuación le damos enter y veremos un mensaje si todo fue "pusheado" correctamente:
+git
 
 ```bash
   Counting objects: 5, done.
